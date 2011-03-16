@@ -815,6 +815,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
@@ -830,6 +831,7 @@
 					AppKit,
 				);
 				PRODUCT_NAME = Tests;
+				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};
@@ -837,6 +839,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Tests_Prefix.pch;
@@ -848,6 +851,7 @@
 					AppKit,
 				);
 				PRODUCT_NAME = Tests;
+				SDKROOT = macosx10.6;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -856,6 +860,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00CD28301211C8A300DF808D /* GHUnit-Debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};
@@ -863,6 +869,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00CD28251211C75100DF808D /* GHUnit-Release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				SDKROOT = macosx10.6;
 			};
 			name = Release;
 		};
