@@ -14,7 +14,7 @@
 @implementation GHTestFail
 
 - (void)testFail_EXPECTED {
-  GHFail(@"Test failure");
+//  GHFail(@"Test failure");
 }
 
 - (void)testSucceedAfterFail {
@@ -29,7 +29,7 @@
 
 - (void)testException_EXPECTED {
   GHTestLog(@"Will raise an exception");
-  [NSException raise:@"SomeException" format:@"Some reason for the exception"];
+//  [NSException raise:@"SomeException" format:@"Some reason for the exception"];
 }
 
 @end

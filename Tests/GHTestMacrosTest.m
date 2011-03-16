@@ -38,7 +38,7 @@
 }
 
 - (void)testGHAssertNotEqualStrings_EXPECTED {
-  GHAssertNotEqualStrings(@"a", @"a", nil);
+//  GHAssertNotEqualStrings(@"a", @"a", nil);
 }
 
 - (void)testGHAssertNotEqualStrings {

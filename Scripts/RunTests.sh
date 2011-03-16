@@ -5,9 +5,8 @@ if [ "$GHUNIT_CLI" = "" ] && [ "$GHUNIT_AUTORUN" = "" ]; then
   exit 0
 fi
 
-export DYLD_ROOT_PATH="$SDKROOT"
-export DYLD_FRAMEWORK_PATH="$CONFIGURATION_BUILD_DIR"
-export IPHONE_SIMULATOR_ROOT="$SDKROOT"
+# export DYLD_ROOT_PATH="$SDKROOT"
+# export IPHONE_SIMULATOR_ROOT="$SDKROOT"
 
 export MallocScribble=YES
 export MallocPreScribble=YES
@@ -28,9 +27,10 @@ echo "Running: $RUN_CMD"
 $RUN_CMD -RegisterForSystemEvents
 RETVAL=$?
 
-unset DYLD_ROOT_PATH
 unset DYLD_FRAMEWORK_PATH
-unset IPHONE_SIMULATOR_ROOT
+
+# unset DYLD_ROOT_PATH
+# unset IPHONE_SIMULATOR_ROOT
 
 if [ -n "$WRITE_JUNIT_XML" ]; then
   MY_TMPDIR=`/usr/bin/getconf DARWIN_USER_TEMP_DIR`
