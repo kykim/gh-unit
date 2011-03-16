@@ -11,3 +11,5 @@ Documentation/GHUnit.docset.tgz
 *~.nib
 .gitattributes
 GHUnit.docset
+project.xcworkspace
+xcuserdata
